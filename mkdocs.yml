@@ -1,8 +1,0 @@
-site_name: My Docs
-site_url: https://becos76.github.io/notes
-theme:
-  name: material
-draft_docs: |
-  drafts/
-  *_draft.md
-
