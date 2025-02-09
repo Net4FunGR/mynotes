@@ -259,6 +259,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Multi-cloud Terminology
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -269,6 +281,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Connectivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networking-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Scopes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking Scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oci" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -302,6 +393,74 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Connectivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networking-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Networking Scopes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking Scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      GCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oci" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -317,12 +476,13 @@
 
 
 <h1 id="multi-cloud-terminology">Multi-cloud Terminology</h1>
+<h2 id="network-connectivity">Network Connectivity</h2>
 <table>
 <thead>
 <tr>
 <th style="text-align: center;">CSP</th>
 <th style="text-align: center;">Network</th>
-<th style="text-align: center;">Connection</th>
+<th style="text-align: center;">Private Connection</th>
 <th style="text-align: center;">Gateway</th>
 </tr>
 </thead>
@@ -353,6 +513,39 @@
 </tr>
 </tbody>
 </table>
+<h2 id="networking-scopes">Networking Scopes</h2>
+<h3 id="aws">AWS</h3>
+<p><img alt="" src="../awsscope.png" /></p>
+<ul>
+<li><strong>VPC</strong>: Global scope within a region</li>
+<li><strong>Availability Zone (AZ)</strong>: A single data centre within a region</li>
+<li><strong>Subnet</strong>: Confined to a single AZ</li>
+</ul>
+<h3 id="azure">Azure</h3>
+<p><img alt="" src="../azscope.png" /></p>
+<ul>
+<li><strong>Virtual Network (VNet)</strong>: Regional scope (spans the whole region)</li>
+<li><strong>Availability Zone (AZ)</strong>: Not tied to subnets; subnets span the whole region</li>
+<li><strong>Subnet</strong>: Exists within a VNet but spans the region</li>
+</ul>
+<h3 id="gcp">GCP</h3>
+<p><img alt="fsfsdf" src="../gcpscope.png" /></p>
+<ul>
+<li><strong>VPC</strong>: Global scope across multiple regions</li>
+<li><strong>Region</strong>: Contains multiple zones</li>
+<li><strong>Subnet</strong>: Regional scope (can span multiple zones)</li>
+</ul>
+<h3 id="oci">OCI</h3>
+<p><img alt="" src="../ociscope.png" /></p>
+<ul>
+<li><strong>Virtual Cloud Network (VCN)</strong>: Similar to AWS VPC, but confined to a single region</li>
+<li><strong>Availability Domain (AD)</strong>: Equivalent to AWS Availability Zones; a region may have multiple ADs</li>
+<li><strong>Subnet Scope</strong>: OCI offers both regional and AD-specific subnets<ul>
+<li><strong>Regional Subnets</strong>: Span the entire region (similar to GCP)</li>
+<li><strong>AD-specific Subnets</strong>: Confined to a single Availability Domain</li>
+</ul>
+</li>
+</ul>
 
 
 
