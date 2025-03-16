@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
-
+ 
 body .gist .gist-file {
   margin-bottom: 0;
   border: 0px dashed #adb5bd;
@@ -11,6 +11,7 @@ body .gist .gist-data {
   border-radius: 0;
   background-color: #f1f3f5;
 }
+
 
 body .gist .blob-wrapper {
   border-radius: 0;
@@ -46,6 +47,8 @@ body .gist .blob-num {
 body .gist .js-line-number {
     display: none;
 }
+
+
 
 /* Prevent displaying footer
 body .gist .gist-meta {
